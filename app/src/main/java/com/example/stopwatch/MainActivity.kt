@@ -76,10 +76,6 @@ class MainActivity : AppCompatActivity() {
 
     override fun onRestart() {
         super.onRestart()
-        if (running) {
-            saveOffset()
-            stopwatch.stop()
-        }
     }
 
     override fun onSaveInstanceState(outState: Bundle) {
